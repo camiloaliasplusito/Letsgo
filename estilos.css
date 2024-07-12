@@ -1,0 +1,186 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+
+.FloatMenu {
+    width: 100%;
+    background-color: #858281; 
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.FloatMenu .logo-text {
+    font-family: "Montserrat", sans-serif;
+    font-size: 24px;
+    color: white;
+    margin-top: -10px; /* Ajusta este valor según sea necesario para mover el logo más arriba */
+    white-space: nowrap; /* Evita que el texto se divida en dos líneas */
+    text-decoration: none;
+}
+
+.FloatMenu center {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+}
+
+.FloatMenu a {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    padding: 10px 20px;
+    transition: background-color 0.3s, color 0.3s;
+    display: flex;
+    align-items: center;
+}
+
+.FloatMenu a:hover {
+    background-color: #959595; 
+    color: #fff;
+    border-radius: 4px;
+}
+
+.FloatMenu .menu-icon {
+    width: 20px; 
+    height: 20px; 
+    margin-right: 8px; 
+}
+
+
+/**/
+.Redesymas {
+    margin-top: 62.7px;
+    background-color: rgb(0, 0, 0);
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+
+}
+
+.Redesymas a img {
+    margin-right: 10px; /* Espaciado entre las imágenes  */
+    
+}
+
+/*Slide semi galeria V: */
+
+
+.gallery {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.gallery-item {
+    position: relative;
+    width: 200px;
+    height: 300px;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+.gallery-item:hover {
+    transform: scale(1.05);
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: opacity 0.3s ease, filter 0.3s ease;
+}
+
+.gallery-item img:hover {
+    opacity: 0.9;
+    filter: brightness(110%);
+}
+
+.description {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    color: white;
+    padding: 10px;
+    box-sizing: border-box;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.gallery-item:hover .description {
+    opacity: 1;
+}
+
+.description h3 {
+    margin: 0;
+    font-size: 16px;
+}
+
+.description p {
+    margin: 5px 0 0;
+    font-size: 14px;
+}
+
+
+
+
+
+:root {
+    --light-bg: #ffffff;
+    --dark-bg: #545454;  /*Modificar opacidad :V*/
+}
+
+body {
+    background-color: var(--light-bg);
+    transition: background-color 0.3s;
+}
+
+body.dark-mode {
+    background-color: var(--dark-bg);
+}
+
+h1 {
+    color: black;
+    transition: color 0.3s;
+}
+
+body.dark-mode h1 {
+    color: white;
+}
+
+
+.xd{
+    margin-top:-30px;
+}
+
+h3{
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    color:beige;
+}
+
+p{
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    color:beige;
+}
